@@ -1,0 +1,22 @@
+<template>
+    <div>
+        <h1>Files</h1>
+
+        <table v-if="files.length" class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="item in files">
+                    <td>{{ item.name }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p v-else><em>Loading...</em></p>
+    </div>
+</template>
+
+<script src="./files.ts"></script>
